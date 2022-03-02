@@ -49,4 +49,4 @@ def Team_Chooser():
         print(groups[i])
 
     return()
-Team_Chooser()
+#Team_Chooser()
