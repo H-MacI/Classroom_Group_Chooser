@@ -1,26 +1,26 @@
 import pandas as pd
 import random
 import numpy as np
-def Team_Chooser():
+def Team_Chooser(which_class, num_groups):
     #random.seed(10)
     ##Import List of Student
-    CSV=pd.read_csv("7ClassList.csv")
+    CSV=pd.read_csv(str(which_class)+"ClassList.csv")
     Names=CSV["Names"]
     restrict=['Ava','Olivia']
     #Declare List of Groups
-
-    while True:
-        try:
-
-            numTeams=int(input("How many teams would you like? "))
-        except ValueError:
-            print("Number of teams must be an integer number")
-            #better try again... Return to the start of the loop
-            continue
-        else:
-            #successfully parsed!
-            #we're ready to exit the loop.
-            break
+    numTeams=int(num_groups)  #Going to test input in tk window
+#    while True:
+#        try:
+#
+#            numTeams=int(num_groups)
+#        except ValueError:
+#            print("Number of teams must be an integer number")
+#            #better try again... Return to the start of the loop
+#            pass
+#        else:
+#            #successfully parsed!
+#            #we're ready to exit the loop.
+#            break
     any_trues=True
     while any_trues:
             test_results=[]
@@ -44,9 +44,9 @@ def Team_Chooser():
             
 
 
-    for i in range(numTeams):
-        print("Group ",i+1)
-        print(groups[i])
+#    for i in range(numTeams):
+#        print("Group ",i+1)
+#        print(groups[i])
 
-    return()
-Team_Chooser()
+    return(groups)
+#Team_Chooser(7,4)
