@@ -44,9 +44,9 @@ def Team_Chooser(which_class, num_groups):
             
 
 
-    for i in range(numTeams):
-        print("Group ",i+1)
-        print(groups[i])
+#    for i in range(numTeams):
+#        print("Group ",i+1)
+#        print(groups[i])
 
-    return()
+    return(groups)
 #Team_Chooser(7,4)
